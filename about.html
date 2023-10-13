@@ -1,0 +1,101 @@
+<html>
+<head><title>ABOUT | DRF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    nav{
+        background-color:aliceblue;
+        height:180px;
+        border:5px solid deepskyblue;
+    }
+    .logo1{
+        width:200px;
+        height:150px;
+    }
+    .h1{
+        position:absolute;
+        top:-20px;
+        left:400px;
+        font-size:50px;
+        font-family: 'Kanit', sans-serif;
+        color:deepskyblue;
+    }
+    .logo2{
+        width:200px;
+        height:150px;
+        position: absolute;
+        left:1160px;
+    }
+    .flex{
+        display:flex;
+        font-size:20px;
+        justify-content:space-between;
+        width:400px;
+        position:absolute;
+        top:120px;
+        left:450px;
+        
+    }
+    .nav_link{
+        color:deepskyblue;
+        display:inline;
+        text-decoration: none;
+    }
+.dropdown-menu{
+	display:none;
+	background-color:aliceblue;
+	border:3px solid deepskyblue;
+	list-style-type:none;
+	position:absolute;
+	z-index:1;
+	padding:5px;
+	top:20px;
+}
+.dropdown:hover .dropdown-menu{
+	display:block;
+	width:300px;
+	height:250px;
+}
+.list-items{
+	margin-top:10px;
+}
+.child1{
+	list-style-type:none;
+}
+.nav_link:hover{
+		color:blue;
+	}
+</style>
+<body>
+    <nav>
+        <img  class="logo1" src="images/logo1.png" alt="drf logo">
+        <p class="h1">Dr.Reddy's Foundation</p>
+        <img  class="logo2" src="images/logo1.png" alt="drf logo">
+        <ul class="flex">
+            <li class="child1"><a href="index.html" class="nav_link">Home</a></li>
+             <li class="child1 dropdown"><a href=" " class="nav_link "  style="color:blue;">About</a>
+		<ul class="dropdown-menu">
+		<li class="list-items"><a href="overview.html" class="nav_link">Overview</a></li>
+		<li  class="list-items"><a href="ourpeople.html" class="nav_link">Our People</a></li>
+		<li  class="list-items"><a href="history.html" class="nav_link">History</a></li>
+		</ul>
+	    </li>
+            <li class="child1 dropdown"><a href="" class="nav_link">Services</a>
+		<ul class="dropdown-menu">
+            <li class="list-items"><a href="education.html" class="nav_link">Education</a></li>
+            <li  class="list-items"><a href="skill.html" class="nav_link">Skill Development</a></li>
+            <li  class="list-items"><a href="rural.html" class="nav_link">Rural Livelihoods</a></li>
+            <li  class="list-items"><a href="inclusion.html" class="nav_link">Inclusion</a></li>
+            <li  class="list-items"><a href="climate.html" class="nav_link">Climate Action & Environment</a></li>
+            <li  class="list-items"><a href="health.html" class="nav_link">Healthcare</a></li>
+            <li  class="list-items"><a href="social.html" class="nav_link">Social Sector Initiatives</a></li>
+		</ul>
+	    </li>
+            <li class="child1"><a href="gallery.html" class="nav_link">Gallery</a></li>
+            <li class="child1"><a href="contact.html" class="nav_link">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

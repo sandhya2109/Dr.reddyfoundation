@@ -1,0 +1,358 @@
+<html>
+<head><title>GALLERY | DRF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+</head>
+<style>
+	body{	
+	overflow-x:hidden;
+}
+    nav{
+        background-color:aliceblue;
+        height:180px;
+        border:5px solid deepskyblue;
+	position:relative;
+	z-index:3;
+    }
+    .logo1{
+        width:200px;
+        height:150px;
+    }
+    .h1{
+        position:absolute;
+        top:-20px;
+        left:400px;
+        font-size:50px;
+        font-family: 'Kanit', sans-serif;
+        color:deepskyblue;
+    }
+    .logo2{
+        width:200px;
+        height:150px;
+        position: absolute;
+        left:1160px;
+    }
+    .flex{
+        display:flex;
+        font-size:20px;
+        justify-content:space-between;
+        width:400px;
+        position:absolute;
+        top:120px;
+        left:450px;
+        
+    }
+    .nav_link{
+        color:deepskyblue;
+        display:inline;
+        text-decoration: none;
+    }
+.dropdown-menu{
+	display:none;
+	background-color:aliceblue;
+	border:3px solid deepskyblue;
+	list-style-type:none;
+	position:absolute;
+	z-index:1;
+	padding:5px;
+	top:20px;
+}
+
+.dropdown:hover .dropdown-menu{
+	display:block;
+	width:300px;
+	height:250px;
+}
+.list-items{
+	margin-top:10px;
+}
+.child1{
+	list-style-type:none;
+}
+.div1{
+	width:1200px;
+	height:700px;
+	position:absolute;
+	z-index:2;
+	top:700px;
+	left:100px;
+	background-color:#FFFFFF;
+	border-radius:30px;
+	box-shadow:2px 2px 2px 2px lightgrey;
+}
+.flex1{
+	display:flex; 
+	position:relative;
+	z-index:3;
+	top:1300px;
+	left:100px;
+	width:1250px;
+	height:2200px;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+.child2{
+	width:380px;
+	height:500px;
+	box-shadow:2px 2px 4px 4px lightgrey;
+	border-radius:30px;
+}
+.img1{
+	width:350px;
+	height:200px;
+	margin-left:20px;
+	margin-top:20px;
+}
+.read{
+	background-color:#2A9DCB;
+	color:white;
+	padding:10px;
+	border-radius:10px;
+	text-decoration:none;
+	margin-top:20px;
+	margin-left:20px;
+}
+.table4{
+	position:absolute;
+	top:3900px;
+	width:1350px;
+	height:300px;
+	background-color:#F3F5F5;
+}
+.links{
+	text-decoration:none;
+	color:black;
+	display:block;
+	font-size:20px;
+	padding-left:80px;
+	margin-left:-10px;
+}
+.links2{
+	position:relative;
+	top:-60px;
+	left:30px;
+}
+.icons{
+	color:black;
+	margin-left:25px;
+	font-size:30px;
+}
+.icons:hover{
+	color:	#4175FC ;
+}
+.dropdown-menu{
+	display:none;
+	background-color:aliceblue;
+	border:3px solid deepskyblue;
+	list-style-type:none;
+	position:absolute;
+	z-index:1;
+	padding:5px;
+	top:20px;
+}
+.dropdown:hover .dropdown-menu{
+	display:block;
+	width:300px;
+	height:250px;
+}
+.list-items{
+	margin-top:10px;
+}
+.child1{
+	list-style-type:none;
+}
+.icons{
+	color:black;
+	margin-left:25px;
+	font-size:30px;
+}
+.icons:hover{
+	color:	#4175FC ;
+}
+.sub{
+	background-color:#1D9BF0;
+        color:white;
+        width:300px;
+        font-size:20px;
+        text-decoration: none;
+        border-radius: 50px;
+	padding-left:40px;
+	padding-right:40px;
+	padding-top:10px;
+	padding-bottom:10px;	
+	margin-left:60px;
+	font-weight:900;
+}
+.nav_link:hover{
+		color:blue;
+	}
+</style>
+<body>
+    <nav>
+        <img  class="logo1" src="images/logo1.png" alt="drf logo">
+        <p class="h1">Dr.Reddy's Foundation</p>
+        <img  class="logo2" src="images/logo1.png" alt="drf logo">
+        <ul class="flex">
+            <li class="child1"><a href="index.html" class="nav_link">Home</a></li>
+             <li class="child1 dropdown"><a href="" class="nav_link ">About</a>
+		<ul class="dropdown-menu">
+		<li class="list-items"><a href="overview.html" class="nav_link">Overview</a></li>
+		<li  class="list-items"><a href="ourpeople.html" class="nav_link">Our People</a></li>
+		<li  class="list-items"><a href="history.html" class="nav_link">History</a></li>
+		</ul>
+	    </li>
+            <li class="child1 dropdown"><a href="" class="nav_link">Services</a>
+		<ul class="dropdown-menu">
+			<li class="list-items"><a href="education.html" class="nav_link">Education</a></li>
+			<li  class="list-items"><a href="skill.html" class="nav_link">Skill Development</a></li>
+			<li  class="list-items"><a href="rural.html" class="nav_link">Rural Livelihoods</a></li>
+			<li  class="list-items"><a href="inclusion.html" class="nav_link">Inclusion</a></li>
+			<li  class="list-items"><a href="climate.html" class="nav_link">Climate Action & Environment</a></li>
+			<li  class="list-items"><a href="health.html" class="nav_link">Healthcare</a></li>
+			<li  class="list-items"><a href="social.html" class="nav_link">Social Sector Initiatives</a></li>
+		</ul>
+	    </li>
+            <li class="child1"><a href="gallery.html" class="nav_link"  style="color:blue;">Gallery</a></li>
+            <li class="child1"><a href="contact.html" class="nav_link">Contact</a></li>
+        </ul>
+    </nav>
+	<img style="position:absolute;top:25px;z-index:1" src="images/img10.png">
+	<div class="div1">
+		<p style="font-size:50px;font-weight:900;">Impact Stories</p>
+		<hr style="height:2px;background-color:black;">	
+		<iframe style="margin-left:120px;margin-top:50px;border-radius:30px;" width="960" height="415" src="https://www.youtube.com/embed/7N9m7c6rH8E" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+	<div class="flex1">
+		<div class="child2">
+		<img class="img1" src="images/img11.webp">
+		<h2>Dancing Forward</h2>
+		<br><hr><br>
+		<p>Shashmita's brigth smile lights up her face, but it cannot hide her angst she hurriedly arranges her skirt to hide her...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img12.webp">
+		<h2>Taking Big Strides</h2>
+		<br><hr><br>
+		<p>Besai Roy is on a fast track to success.He joined Flipkart in their "voice Process" - department at the entry level when the pandemic...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img13.webp">
+		<h2>Ready for the big Kick-off</h2>
+		<br><hr><br>
+		<p>Aishwarya Vittal Nayak might be an odd ball! Unlike other girls and undaunted by her background, this thirteen-year-old aspires to be a professional...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img14.webp">
+		<h2>Can do,Will do</h2>
+		<br><hr><br>
+		<p>Apparao Janapala, owns five acres of land in Govindapuram village, in Vizianagaram District. The hard working 50-year-old farmer mainly...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img15.jpg">
+		<h2>Down but not Out</h2>
+		<br><hr><br>
+		<p>Hinaz was married to a dentist, more than ten years-older than her. When she left home, she was hoping that her educated husband would appreciate her wanting to study and allow her to go to college. But she could...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img16.jpg">
+		<h2>Good things come in Small packages</h2>
+		<br><hr><br>
+		<p>Fast like Usain Bolt and quick like Harry Houdini that’s Tanyasri Raghupatruni for you. This ten-year-old breathes soccer and knows how to tackle both the soccer ball and her critics with equal finesse...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img17.jpg">
+		<h2>Watching Dreams Unfurl</h2>
+		<br><hr><br>
+		<p>Forty-five year old Kanhaiya Yadav from Daina village in Sakaldiha is one of our early lead farmers and a man with one goal – to put his village on the map of India as a model village...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img18.jpg">
+		<h2>Managing Combustible Equations</h2>
+		<br><hr><br>
+		<p>Simran our star achiever underlines the evident paradox of being a brilliant student when born as a girl in this country. This topper in Chemistry, who joined the prestigious Indian Institute of Science at Bangalore, has reached here not by just excelling in academics but ...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img19.jpg">
+		<h2>This is the house that Jayesh built</h2>
+		<br><hr><br>
+		<p>Jayesh shifted to his new house with his parents before the pandemic surge and is relieved that they have a roof over their heads. “If we lived in our earlier settings I doubt if my aged parents would have been safe” says Jayesh...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+
+		<div class="child2">
+		<img class="img1" src="images/img20.jpg">
+		<h2>Focusing on Enabling Others</h2>
+		<br><hr><br>
+		<p>Two years ago we had shared the story of young Anjum Begum, all set to attend the Community College at North Virginia’s Alexandria Campus. For those of us who were tracking her story, we remember with great vividness the nervousness and uncertainty that etched her...</p>
+		<a class="read" href="">Read More</a>
+		</div>
+	</div>
+	<table class="table4" cellspacing="10px">
+	<tr>
+	<th style="font-size:25px;">Subscribe & Social</th>
+	<th style="font-size:25px;">Work Areas</th>
+	<th style="font-size:25px;">About Us</th>
+	<th style="font-size:25px;">Others</th>
+	</tr>
+	<tr>
+	<td>
+	<br><br><br><br>
+	<input style="padding:10px;background-color:white;width:300px;font-size:17px;margin-left:50px;margin-top:-70px;border:1px solid lightgrey;" type="email" placeholder="Email Address">	
+	<br><br><br><br>
+	<a class="sub" href="">SUBSCRIBE</a>
+	<br><br><br><br>
+	<a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDRF_India"><i class="fa-brands fa-twitter icons"></i></a>
+	<a href="https://www.linkedin.com/company/drreddysfoundation"><i class="fa fa-linkedin icons"></i></a>
+	<a href="https://www.instagram.com/drf_india/"><i class="fa-brands fa-instagram  icons"></i></a>
+	<a href="https://www.facebook.com/drreddysfoundationindia"><i class="fa-brands fa-facebook  icons"></i></a>
+	<a href="https://www.youtube.com/user/drreddysfoundation"><i class="fa-brands fa-youtube  icons"></i></a>
+	</td>
+	<td style="position:relative;top:-25px;left:30px;">
+	<a class="links " href="">Education</a>
+	<a  class="links "href="">Skill Development</a>
+	<a class="links " href="">Rural Livelihoods</a>
+	<a class="links " href="">Inclusion</a>
+	<a class="links " href="">Climate Action & Environment</a>
+	<a  class="links " href="">Healthcare</a>
+	<a  class="links " href="">Social Sector Initiatives</a>
+	</td>
+	<td style="width:300px;">
+	<a  class="links links2"href="">Overview</a>
+	<a  class="links links2"href="">Our People</a>
+	<a class="links links2" href="">History</a>
+	</td>
+	<td style="width:300px;">
+	<a class="links links2" href="">Carrers</a>
+	<a class="links links2" href="">Resources</a>
+	<a class="links links2" href="">Impact Stories</a>
+	<a class="links links2" href="">Contact Us</a>
+	</td>
+	</tr>
+	</table>
+</body>
+</html>
